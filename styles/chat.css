@@ -1,0 +1,205 @@
+:root {
+    --chatWidth: 280px;
+}
+
+.chat-visible {
+    right: var(--chatWidth) !important;
+    width: calc(100% - var(--chatWidth)) !important;
+}
+
+.overlay-visible {
+    right: var(--chatWidth) !important;
+    width: calc(100% - var(--chatWidth)) !important;
+}
+
+.hideChat {
+    display: none !important;
+}
+
+.chatMessage {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+#chat-header,#usercount-header, #sendMessage {
+    background-color: #00008000 !important;
+    border: 0px;
+}
+
+#usercount-header {
+    font-size: 0px;
+    left: 15px;
+}
+#usercount-label {
+    left: 15px;
+    text-align: left;
+    font-size: 17px;
+    color: #fff;
+}
+
+.systemMessage p {
+    color: lightslategray;
+}
+
+#chatWrapper {
+    box-shadow: rgb(0, 0, 0, 0.8) -6px 0px 10px !important;
+    background-color: rgba(3, 10, 27, 0.53);
+    display: flex;
+    flex-direction: column;
+}
+
+#insta {
+    width: 100%;
+}
+
+#insta-container{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+}
+
+#insta img {
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+#insta p {
+    font-size: 14px;
+    color:gray;
+    margin-top: 10px;
+    width: calc(var(--chatWidth) - 100px);
+}
+#sendMessageContainer {
+    width: 100%;
+}
+
+#sendMessageInner {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: left;
+}
+
+#messageInput {
+    background-color: #0000ff00;
+    color: white;
+    resize:none;
+    overflow:hidden;
+    height:25px;
+    width: 100%;
+    padding: 7px 0px !important;
+    border-width: 0px;
+    outline: none;
+    padding: 5px;
+}
+
+.wrapper {
+    z-index: 2147483647 !important;
+}
+
+#messageInput:focus {
+    color: white;
+}
+
+textarea::placeholder {
+    color: #ffffff;  
+}
+
+.messageSender {
+    font-size: 1em;
+}
+
+.messageText {
+    font-size: 1em;
+    margin-top: .1em;
+}
+
+#userIcon {
+    line-height: 1.6 !important;
+    font-size: 1.6em !important;
+    width: 30px;
+    height: 30px;
+}
+
+
+#chat-content {
+    display: flex !important;
+    flex: 1 !important;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#sendMessage {
+    padding-top: 0px;
+}
+
+#chatWrapper {
+    position: absolute;
+    right: 0px;
+    width: var(--chatWidth);
+    height: 100%;
+    z-index: 9999;
+}
+.chatMessage,#typingIndicator {
+    /* //height: 50px; */
+    background-color: #00008000 !important;
+    border: 0px;
+}
+
+#typingIndicator {
+    /* //height: 50px; */
+    height: 30px;
+}
+#messageInfo {
+    line-height: .5em;
+    color: darkgray;
+}
+
+.segment-wrapper {
+    height: 100%;
+}
+
+#reactionHolder {
+    display: flex;
+    width: 100%;
+    flex-direction: horizontal;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.reactionButton {
+    width: 100%;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.reactionButton button {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    outline: none;
+    border: none;
+    background-color: hsla(0,0%,100%,.2);
+    border-radius: 50%;
+    padding: 5px;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    cursor: pointer;
+    width: 35px;
+    height: 35px; 
+    background-color: rgba(129, 161, 230, 0.2);
+}
+
+.reactionButton button img {
+    width: 25px; 
+    height: 25px;
+}
+
+.reactionButton button:hover {
+    background-color: hsla(0,0%,100%,.5)!important;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
