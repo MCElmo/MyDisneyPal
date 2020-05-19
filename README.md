@@ -1,5 +1,6 @@
 # MyDisneyPal
 My Disney Pal is a third party extension that allows you and your friends to watch videos on Disney Plus at the same time!
+My Disney Pal was previously available on the Chrome Store, but was taken down due to a fraudelent copyright notice. I am working to get it back. In the mean time, it can be installed using the directions below. 
 
 How to Install from GitHub:
 --------------------------
