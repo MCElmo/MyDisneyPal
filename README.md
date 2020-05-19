@@ -12,6 +12,9 @@ How to Install from GitHub:
 6. Select "Load unpacked" and select the folder you extracted from the zip file.
 7. Enjoy. Make sure to check this page for future updates.
 
+Demo Video
+-----------
+[![My Disney Pal Demo Video](http://img.youtube.com/vi/MGgJxmT8qJU/0.jpg)](http://www.youtube.com/watch?v=MGgJxmT8qJU "My Disney Pal Demo Video")
 
 How to use:
 -----------
