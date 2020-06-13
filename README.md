@@ -14,6 +14,9 @@ How to use:
 4. Have your friends go to the link and click on the extension to join your room.
 5. Enjoy
 
+Version 1.0.5:
+- Send users to website on install
+
 Version 1.0.4:
 - Added Host only controls
 - Bug fixes
