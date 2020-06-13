@@ -3,9 +3,13 @@ My Disney Pal is a third party extension that allows you and your friends to wat
 
 How to Install from GitHub:
 --------------------------
-1. Click the Green Clone or Download Button
-2. Select Download Zip
-3. 
+1. Click the release tab in the top bar
+2. Select download source on the latest release
+3. Save and extract the zip file
+4. In Chrome go to Menu (the three lines)->More tools->Extensions
+5. Click the developer mode button in the top right and then click "Load unpacked Extension"
+6. Navigate to the folder you just extracted
+7. Click select folder and you are done.
 
 How to use:
 1. Have all friends download the extension
