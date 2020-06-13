@@ -1,0 +1,112 @@
+<html style="height:fit-content">
+
+<head>
+	<title> My Disney Pal</title>
+	<link rel="stylesheet" type="text/css" href="../semantic/semantic.min.css">
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="../socket.io.js"></script>
+	<script type="text/javascript" src="../semantic/semantic.min.js"></script>
+	<script type="text/javascript" src="../js/popup/main.js"></script>
+</head>
+
+<body style="margin: 0px; min-width: 375px; max-width: 375px; height: fit-content">
+	<div id="content">
+
+		<div class="ui top attached red header left aligned">
+			<h3>My Disney Pal - Version 1.0.4</h3>
+		</div>
+		<div id="createMenu" class="ui attached inverted black center aligned segment">
+			<div class="ui white large header left aligned">
+				<h3>Create a party!</h3>
+			</div>
+
+
+			<div class="ui fluid labeled icon vertical buttons">
+				<button id="createPartyButton" class="ui red button">
+					<i class="play icon"></i>
+					Create a Party
+				</button>
+			</div>
+			<div class = "ui left aligned segment">
+				<div class="ui fluid checkbox" id="hostHolder">
+					<input type="checkbox" id="hostOnly">
+					<label>Only host has control</label>
+				</div>
+			</div>
+		</div>
+
+		<div id="inRoomMenu" class="ui hidden center aligned attached inverted segment">
+			<p>Give your friends this url to join. They must have the extension installed and click
+				on the red icon to join.</p>
+			<div class="ui relaxed list">
+
+				<div class="item">
+					<div class="ui fluid labeled action input">
+						<input id="partyUrl" type="text" readonly="true" autocomplete="off" value="" autofocus>
+						<button id="partyUrlButton" type="button" name="copyToken" value="copy" class="ui red right labeled icon button">
+							<i class="copy icon"></i>
+							Copy
+						</button>
+					</div>
+				</div>
+				<div class="item">
+					<button id="showChatButton" class="ui fluid red button">
+						Show Chat
+					</button>
+				</div>
+				<div class="item">
+					<button id="overlayChatButton" class="ui fluid red button">
+						Overlay Chat
+					</button>
+				</div>
+				<div class="item">
+					<button id="showReactions" class="ui fluid red button">
+						Show Reactions
+					</button>
+				</div>
+				<div class="item">
+					<div class="ui fluid labeled action input">
+						<div class="ui label">
+							Name:
+						</div>
+						<input id="userNameInput" type="text" placeholder="User">
+						<button id="saveChangesButton" type="button" class="ui green right labeled icon button">
+							<i class="copy icon"></i>
+							Save
+						</button>
+					</div>
+				</div>
+				<div class="item">
+					<button id="disconnectButton" class="ui fluid red animated button">
+						<i class="sign out alternate icon"></i>
+						Disconnect
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="notifDiv" class="ui attached hidden message">
+			<div class="header">
+				Notifications:
+			</div>
+			<p id="notifText"></p>
+		</div>
+		<!-- <div id="messageDiv" class="ui attached green message">
+			<p id="messageText">Please consider leaving a positive rating 
+				<a href="https://chrome.google.com/webstore/detail/my-disney-pal-watch-disne/gmfkofepmajkeooilngecbgngnbkeige" target="_blank">here.</a></p>
+		</div> -->
+		<div id="siteMessage" class="ui bottom attached red message hidden">
+			<p>Please open a video on Disney Plus to create a party</p>
+		</div>
+		<div id="errorContent" class="ui bottom attached red message hidden">
+			<p id="errorMessage">Error</p>
+			<button id="dismissError" class="ui red button">
+				Dismiss
+			</button>
+		</div>
+		<div id="messageDiv" class="ui bottom attached inverted message">
+			<p id="messageText">Follow the Developer : <a href="https://www.instagram.com/seth_setse/" target="_blank">Seth Setse</a></p>
+		</div>
+	</div>
+</body>
+
+</html>

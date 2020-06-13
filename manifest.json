@@ -1,0 +1,31 @@
+{
+    "name":"My Disney Pal - Watch Disney Plus Together!",
+    "version": "1.0.5",
+    "description": "Watch videos on Disney+ / Disney Plus with friends. Have a Disney Plus Party!",
+    "permissions":["activeTab", "storage"],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "html/popup.html"
+    },
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "icons": {
+        "128":"icon128.png",
+        "256":"icon256.png"
+    },
+    "web_accessible_resources": [
+        "html/chat.html",
+        "html/reactions.html",
+        "styles/reactions.css",
+        "styles/chat.css",
+		"semantic/themes/default/assets/fonts/*",
+		"semantic/themes/default/assets/fonts/*",
+        "semantic/themes/default/assets/images/*.png",
+        "semantic/semantic.min.css",
+        "semantic/semantic.min.js",
+        "images/*.png"
+	],
+    "manifest_version": 2
+}
